@@ -7,4 +7,55 @@
 
 body {
 	background-image: url('../img/sandpaper.png');
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+article {
+	width: 90%;
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #907a46;
+	padding: 10px;
+
+}
+
+h1 {
+	font-family: 'Cantora One', sans-serif;
+	font-size: 200%;
+	color: #EEEDEA;
+	line-height: 60px;
+}
+
+.logo {
+	height: 60px;
+	float: right;
+	opacity: 0.7;
+}
+
+.logo:hover {
+	opacity: 1.0;
+}
+
+figure {
+	display: inline-block;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+figcaption {
+	font-weight: 300;
+	text-align: center;
+	margin-top: 5px;
+}
+
+figure img {
+	width: 200px;
+	border: 10px solid #EEE;
+	border-radius: 2px;
 }
