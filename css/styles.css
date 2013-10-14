@@ -5,6 +5,19 @@
 @import url(https://fonts.googleapis.com/css?family=Cantora+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+@-webkit-keyframes pulse {
+    0%      {opacity: 0.3;}
+    50%     {opacity: 1;}
+    100%    {opacity: 0.3;}
+}
+
+@keyframes pulse {
+    0%      {opacity: 0.3;}
+    50%     {opacity: 1;}
+    100%    {opacity: 0.3;}
+}
+
+
 body {
 	background-image: url('../img/sandpaper.png');
 	font-family: 'Open Sans', sans-serif;
@@ -20,9 +33,8 @@ article {
 }
 
 header {
-	background-color: #907a46;
+	background-color: #907A46;
 	padding: 10px;
-
 }
 
 h1 {
@@ -36,6 +48,8 @@ h1 {
 	height: 60px;
 	float: right;
 	opacity: 0.7;
+	-webkit-animation: pulse 5s infinite;
+	animation: pulse 5s infinite;
 }
 
 .logo:hover {
@@ -58,4 +72,19 @@ figure img {
 	width: 200px;
 	border: 10px solid #EEE;
 	border-radius: 2px;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;  
+}
+
+figure img:hover {
+	box-shadow: 2px 2px 6px #555;
+	-webkit-transform: scale(1.5) rotate(360deg);
+	-moz-transform: scale(1.5) rotate(360deg);
+	-o-transform: scale(1.5) rotate(360deg);
+	-ms-transform: scale(1.5) rotate(360deg);
+	transform: scale(1.5) rotate(360deg);
 }
